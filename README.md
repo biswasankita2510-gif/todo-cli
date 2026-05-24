@@ -1,12 +1,23 @@
-# To-Do Application
+# ToDo CLI
 
-A Python-based task management application built as a Command Line Interface (CLI) system, with planned upgrades to a modern GUI and web-based application.
-
-This project focuses on modular programming, persistent storage, task state management, and scalable application design while keeping the code clean, beginner-friendly, and maintainable.
+A modular Python CLI-based task management application with persistent storage, task state management, and future GUI/web expansion plans.
 
 ---
 
-## Preview
+# Features
+
+- Add Tasks
+- Delete Tasks
+- Mark Tasks as Completed
+- Mark Tasks as Undone
+- Search Tasks
+- Persistent Local Storage
+- Input Validation and Error Handling
+- Unicode-Safe File Operations
+
+---
+
+# Preview
 
 ```text
 ------------------------------
@@ -19,25 +30,10 @@ ______________________________
 
 ---
 
-## Current Features
-
-| Feature | Description |
-|---|---|
-| Add Tasks | Create and save new tasks |
-| Delete Tasks | Remove tasks from the list |
-| Mark as Done | Mark tasks as completed |
-| Mark as Undone | Revert completed tasks |
-| Search Tasks | Find tasks using keywords |
-| Persistent Storage | Tasks are automatically saved locally |
-| Error Handling | Handles invalid input safely |
-| Unicode Support | Supports UTF-8 file operations |
-
----
-
-## Project Structure
+# Project Structure
 
 ```text
-todo-cli-python/
+todo-cli/
 │
 ├── main.py
 ├── tasks.txt
@@ -47,15 +43,16 @@ todo-cli-python/
 
 ---
 
-## Technologies Used
+# Technologies Used
 
-### Current Stack
+## Current Stack
 
 - Python 3
 - File Handling
-- Lists and String Manipulation
+- Lists
+- String Manipulation
 
-### Planned Stack
+## Planned Stack
 
 - CustomTkinter
 - Flask
@@ -63,7 +60,7 @@ todo-cli-python/
 
 ---
 
-## How It Works
+# How It Works
 
 The application stores tasks inside a local text file (`tasks.txt`) and automatically loads them during startup.
 
@@ -74,33 +71,37 @@ Each task maintains a completion state:
 [✔] Completed Task
 ```
 
-The project uses modular functions to separate functionalities such as:
+The project is designed using modular functions for:
 
-- Adding tasks
-- Deleting tasks
+- Task creation
+- Task deletion
 - Searching tasks
-- Updating task status
+- Updating task states
 - Saving and loading data
 
-This structure improves readability and makes future upgrades easier.
+This structure improves readability, maintainability, and future scalability.
 
 ---
 
-## Running the Application
+# Running the Application
 
-### Clone the Repository
-
-```bash
-git clone https://github.com/your-username/todo-cli-python.git
-```
-
-### Move into the Project Directory
+## Clone the Repository
 
 ```bash
-cd todo-cli-python
+git clone https://github.com/your-username/todo-cli.git
 ```
 
-### Run the Application
+---
+
+## Move Into the Project Directory
+
+```bash
+cd todo-cli
+```
+
+---
+
+## Run the Application
 
 ```bash
 python main.py
@@ -108,31 +109,32 @@ python main.py
 
 ---
 
-## Learning Outcomes
+# Learning Outcomes
 
 This project helped strengthen understanding of:
 
-- Modular programming
-- File handling in Python
-- Input validation
-- Exception handling
-- String manipulation
-- Search functionality
-- State management
-- Debugging techniques
-- Git and GitHub workflow
+- Modular Programming
+- File Handling in Python
+- Input Validation
+- Exception Handling
+- State Management
+- Search Functionality
+- Debugging Techniques
+- Git and GitHub Workflow
 
 ---
 
-## Future Development Roadmap
+# Future Development Roadmap
 
-### Phase 1 — CLI Application
+## Phase 1 — CLI Application
 
 - Basic task management system
-- Persistent local storage
+- Persistent storage
 - Task completion tracking
 
-### Phase 2 — GUI Application
+---
+
+## Phase 2 — GUI Application
 
 Planned improvements:
 
@@ -142,31 +144,33 @@ Planned improvements:
 - Search bar integration
 - Improved user experience
 
-### Phase 3 — Web Application
+---
+
+## Phase 3 — Web Application
 
 Planned improvements:
 
 - Flask-based web application
 - Database integration
 - Authentication system
-- Task categorization and prioritization
-- Responsive UI design
+- Task categorization
+- Responsive UI
 
 ---
 
-## Possible Future Improvements
+# Possible Future Improvements
 
 - Due dates and deadlines
 - Task priorities
 - Colored terminal interface
 - Export tasks to CSV/JSON
-- Notification/reminder system
+- Reminder system
 - Dark mode GUI
 - Cloud synchronization
 
 ---
 
-## Repository Status
+# Repository Status
 
 | Component | Status |
 |---|---|
@@ -176,6 +180,6 @@ Planned improvements:
 
 ---
 
-## License
+# License
 
 This project is open-source and available under the MIT License.
