@@ -1,3 +1,6 @@
-[ ] ghtsn  drthrtgh
-[✔] gtbwtyhw gbwht
-[ ] ghyjndderg njjggv
+[
+    {
+        "title": "Add todo to github",
+        "completed": false
+    }
+]

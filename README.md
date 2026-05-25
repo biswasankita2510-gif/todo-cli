@@ -52,6 +52,10 @@ todo-cli/
 - Lists
 - String Manipulation
 
+## Dependencies
+
+- colorama
+
 ## Planned Stack
 
 - CustomTkinter
