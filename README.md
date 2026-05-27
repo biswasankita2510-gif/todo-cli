@@ -1,42 +1,72 @@
-# ToDo CLI
+# ToDo Task Manager
 
-A modular Python CLI-based task management application with persistent storage, task state management, and future GUI/web expansion plans.
+A modern Python-based task management application featuring both a Command-Line Interface (CLI) and a Graphical User Interface (GUI) built using CustomTkinter.
+
+The project focuses on clean architecture, modular backend/frontend separation, persistent storage, interactive GUI design, and scalable software engineering principles.
 
 ---
 
 # Features
 
-- Add Tasks
-- Delete Tasks
-- Mark Tasks as Completed
-- Mark Tasks as Undone
-- Search Tasks
-- Persistent Local Storage
-- Input Validation and Error Handling
-- Unicode-Safe File Operations
+## CLI Features
+
+- Add tasks
+- Delete tasks
+- Mark tasks as completed
+- Mark tasks as pending
+- Search tasks
+- View task statistics
+- Colored terminal interface using Colorama
 
 ---
 
-# Preview
+## GUI Features
 
-```text
-------------------------------
- YOUR TASK LIST
-------------------------------
-1. [ ] Complete Python project
-2. [✔] Push project to GitHub
-______________________________
+- Modern dark-themed GUI using CustomTkinter
+- Dynamic task rendering
+- Scrollable task list
+- Search functionality
+- Task filtering system
+- Statistics dashboard
+- Mark done / mark undone
+- Delete tasks
+- Colored priority indicators
+- Real-time UI updates
+
+---
+
+# Task Structure
+
+Each task stores:
+
+- Title
+- Completion status
+- Priority
+- Due date
+
+Example:
+
+```json
+{
+    "title": "Study Python",
+    "completed": false,
+    "priority": "High",
+    "due_date": "2026-05-30"
+}
 ```
 
 ---
 
-# Project Structure
+# Project Architecture
 
 ```text
-todo-cli/
+todo_app/
 │
+├── backend.py
 ├── main.py
-├── tasks.txt
+├── gui.py
+├── tasks.json
+├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
@@ -48,64 +78,67 @@ todo-cli/
 ## Current Stack
 
 - Python 3
-- File Handling
-- Lists
-- String Manipulation
-
-## Dependencies
-
-- colorama
-
-## Planned Stack
-
 - CustomTkinter
-- Flask
-- SQLite / PostgreSQL
+- Colorama
+- JSON Storage
+- File Handling
 
 ---
 
-# How It Works
+# Software Design Concepts
 
-The application stores tasks inside a local text file (`tasks.txt`) and automatically loads them during startup.
+This project demonstrates:
 
-Each task maintains a completion state:
-
-```text
-[ ] Pending Task
-[✔] Completed Task
-```
-
-The project is designed using modular functions for:
-
-- Task creation
-- Task deletion
-- Searching tasks
-- Updating task states
-- Saving and loading data
-
-This structure improves readability, maintainability, and future scalability.
+- Modular programming
+- Backend/frontend separation
+- Event-driven GUI programming
+- State management
+- Dynamic UI rendering
+- Search and filtering systems
+- Persistent local storage
+- Reactive interface updates
+- Input validation
+- Software architecture principles
 
 ---
 
-# Running the Application
+# Installation
 
-## Clone the Repository
+Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/todo-cli.git
+git clone https://github.com/YOUR-USERNAME/todo-cli.git
 ```
 
----
-
-## Move Into the Project Directory
+Move into project directory:
 
 ```bash
 cd todo-cli
 ```
 
+Create virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Activate virtual environment:
+
+## Windows
+
+```bash
+venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
 ---
 
-## Run the Application
+# Running the CLI Version
 
 ```bash
 python main.py
@@ -113,77 +146,34 @@ python main.py
 
 ---
 
-# Learning Outcomes
+# Running the GUI Version
 
-This project helped strengthen understanding of:
-
-- Modular Programming
-- File Handling in Python
-- Input Validation
-- Exception Handling
-- State Management
-- Search Functionality
-- Debugging Techniques
-- Git and GitHub Workflow
+```bash
+python gui.py
+```
 
 ---
 
-# Future Development Roadmap
+# Future Improvements
 
-## Phase 1 — CLI Application
-
-- Basic task management system
-- Persistent storage
-- Task completion tracking
-
----
-
-## Phase 2 — GUI Application
-
-Planned improvements:
-
-- Modern desktop interface using CustomTkinter
-- Interactive task controls
-- Scrollable task list
-- Search bar integration
-- Improved user experience
-
----
-
-## Phase 3 — Web Application
-
-Planned improvements:
-
-- Flask-based web application
-- Database integration
-- Authentication system
-- Task categorization
-- Responsive UI
-
----
-
-# Possible Future Improvements
-
-- Due dates and deadlines
-- Task priorities
-- Colored terminal interface
-- Export tasks to CSV/JSON
-- Reminder system
-- Dark mode GUI
+- SQLite database integration
+- User authentication
+- Task categories
+- Task editing
+- Drag-and-drop task management
 - Cloud synchronization
+- Flask web version
 
 ---
 
 # Repository Status
 
-| Component | Status |
-|---|---|
-| CLI Application | Completed |
-| GUI Version | Planned |
-| Web Version | Planned |
+Current Version: GUI + CLI Application  
+Architecture: Modular Backend/Frontend  
+GUI Framework: CustomTkinter
 
 ---
 
 # License
 
-This project is open-source and available under the MIT License.
+This project is licensed under the MIT License.
