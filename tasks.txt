@@ -1,6 +1,0 @@
-[
-    {
-        "title": "Add todo to github",
-        "completed": false
-    }
-]
